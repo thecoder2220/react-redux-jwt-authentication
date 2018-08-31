@@ -2,12 +2,12 @@ import config from 'config';
 import { authHeader } from '../_helpers';
 
 export const userService = {
-    login,
+    doLogin,
     logout,
     getAll
 };
 
-function login(username, password) {
+function doLogin(username, password) {
     const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
