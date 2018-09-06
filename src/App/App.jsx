@@ -8,7 +8,7 @@ import { PrivateRoute } from '../_components';
 import { HomePage } from '../HomePage';
 import { LoginPage } from '../LoginPage';
 
-class App extends React.Component {
+    class App extends React.Component {
     constructor(props) {
         super(props);
 

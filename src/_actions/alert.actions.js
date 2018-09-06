@@ -3,7 +3,8 @@ import { alertConstants } from '../_constants';
 export const alertActions = {
     success,
     error,
-    clear
+    clear,
+    addTodo
 };
 
 function success(message) {
@@ -16,4 +17,13 @@ function error(message) {
 
 function clear() {
     return { type: alertConstants.CLEAR };
+}
+
+// action creator en ES6
+// pour tester le module NPM Jest
+function addTodo(text) {
+    return {
+        type: 'ADD_TODO',
+        text
+    }
 }
